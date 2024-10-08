@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제11번</title>
+</head>
+<body>
+    <h2>글 작성하기</h2>
+   <form action="/submit" method="post">
+    <table> 
+        <tr>
+            <td><label for="author"><strong>작성자</strong></label></td>
+            <td><input id="author" type="text" name="author"></td>
+        </tr>
+        <tr>
+            <td><label for="id"><strong>아이디</strong></label></td>
+            <td><input id="id" type="text" name="id"></td>
+        </tr>
+        <tr>
+            <td><strong>이메일</strong></td>
+            <td><input id="email" type="email" name="email"> @ <input id="email" type="text" name="emailDomain"></td>
+        </tr>
+        <tr>
+            <td><strong>휴대폰</strong></td>
+            <td>
+              <select name="phoneCode">
+                <option value="010">010</option>
+                <option value="011">011</option>
+              </select> - 
+              <input type="text" name="phoneFirst"> - 
+              <input type="text" name="phoneSecond">
+            </td>
+      
+        </tr>
+        <tr>
+            <td><label for="title"><strong>글제목</strong></label></td>
+            <td><input id="title" type="text" name="title"></td>
+        </tr>
+        <tr>
+            <td><strong>내용</strong></td>
+            <td><textarea name="content" rows="10" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><input type="submit" value="제출"></td>
+        </tr>
+
+
+
+    </table> 
+   </form> 
+</body>
+</html>
